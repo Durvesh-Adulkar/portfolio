@@ -20,7 +20,7 @@
     --space-2xl: 5rem;
     --space-3xl: 7rem;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
@@ -69,11 +69,13 @@
   }
 
   .site-header {
-    display: none; /* Desktop pill navigation hides on mobile */
+    display: none;
+    /* Desktop pill navigation hides on mobile */
   }
 
   .mobile-nav {
-    display: block; /* Show iPhone style bottom navbar */
+    display: block;
+    /* Show iPhone style bottom navbar */
   }
 
   .hero-section {
@@ -89,7 +91,9 @@
     font-size: var(--font-size-base);
   }
 
-  .grid-3, .grid-4, .grid-2 {
+  .grid-3,
+  .grid-4,
+  .grid-2 {
     grid-template-columns: 1fr;
   }
 
@@ -158,7 +162,10 @@
 
 /* Accessibility: Accessibility reduced motion override */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+
+  *,
+  ::before,
+  ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

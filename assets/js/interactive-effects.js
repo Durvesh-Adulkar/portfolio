@@ -13,7 +13,7 @@
   var projectDetails = {
     gladiance: {
       title: "Gladiance (Smart Home IoT Automation)",
-      company: "Velocetech Insights • Jul 2025 – Present",
+      company: '<a href="https://velodynamics.in/" target="_blank" rel="noopener noreferrer">velodynamics</a> • Jul 2025',
       problem: "Modern smart environments require real-time control over diverse IoT hardware (lighting, climate, motor curtains, entertainment) with instant status feedback across concurrent mobile clients.",
       role: "Owned Flutter UI development, SignalR WebSocket integration for live device telemetry, mood controls, and scheduled automation rules.",
       architecture: "Flutter 3.x, Provider State Management, SignalR Realtime Sockets, REST API Integration, MVC Pattern, Device Status Caching.",
@@ -21,7 +21,7 @@
     },
     asha: {
       title: "Asha (Government Health-Worker Platform)",
-      company: "Velocetech Insights • Jul 2025 – Present",
+      company: '<a href="https://velodynamics.in/" target="_blank" rel="noopener noreferrer">velodynamics</a> • Jul 2025',
       problem: "Healthcare workers operating in rural field environments need high-reliability tools for population registers and child/maternal health tracking under zero/low network coverage.",
       role: "Engineered complex form validation engines, offline-first SQLite database architecture, and background transport-layer synchronization.",
       architecture: "Flutter, SQLite Local Database, Provider State Management, Background Queue Sync, Multi-step Form Validation, REST APIs.",
@@ -117,6 +117,7 @@
 
     cards.forEach(function (card) {
       function triggerModal(e) {
+        if (e.target.closest('a')) return;
         e.preventDefault();
         var key = card.getAttribute('data-project');
         if (key && projectDetails[key]) {
@@ -143,7 +144,7 @@
 
     function openModal(data) {
       document.getElementById('modal-title').textContent = data.title;
-      document.getElementById('modal-company').textContent = data.company;
+      document.getElementById('modal-company').innerHTML = data.company;
       document.getElementById('modal-problem').textContent = data.problem;
       document.getElementById('modal-role').textContent = data.role;
       document.getElementById('modal-architecture').textContent = data.architecture;
