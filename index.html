@@ -274,20 +274,87 @@
               aria-label="Open Asha Case Study">
               <div class="project-image-wrapper">
                 <div class="project-cover-vector">
-                  <!-- Abstract Glass Form / Medical Cross Vector Artwork -->
+                  <!-- Abstract High-Tech Health-Tech & Medical Pulse Glass Artwork -->
                   <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="40" y="30" width="320" height="160" rx="16" fill="rgba(255,255,255,0.03)"
-                      stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
-                    <rect x="65" y="55" width="140" height="14" rx="7" fill="rgba(255,255,255,0.25)" />
-                    <rect x="65" y="80" width="270" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
-                    <rect x="65" y="98" width="210" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
-                    <rect x="65" y="116" width="240" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
-                    <!-- Medical Cross / Pulse Motif -->
-                    <circle cx="310" cy="70" r="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)"
-                      stroke-width="1.5" />
-                    <path d="M310 56V84M296 70H324" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-                    <path d="M65 150H160M180 150L190 140L200 160L210 135L220 155L230 150H335"
-                      stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <defs>
+                      <linearGradient id="ashaBg" x1="40" y1="30" x2="360" y2="190" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9" />
+                        <stop offset="100%" stop-color="#064e3b" stop-opacity="0.9" />
+                      </linearGradient>
+                      <linearGradient id="ashaBorder" x1="40" y1="30" x2="360" y2="190" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="rgba(52, 211, 153, 0.6)" />
+                        <stop offset="50%" stop-color="rgba(255, 255, 255, 0.2)" />
+                        <stop offset="100%" stop-color="rgba(6, 182, 212, 0.5)" />
+                      </linearGradient>
+                      <linearGradient id="ashaCrossBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f43f5e" />
+                        <stop offset="100%" stop-color="#e11d48" />
+                      </linearGradient>
+                      <linearGradient id="ecgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#00f2fe" />
+                        <stop offset="40%" stop-color="#34d399" />
+                        <stop offset="70%" stop-color="#f43f5e" />
+                        <stop offset="100%" stop-color="#34d399" />
+                      </linearGradient>
+                      <filter id="emeraldGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="4" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                      </filter>
+                    </defs>
+
+                    <!-- Background Ambient Glow -->
+                    <rect x="40" y="30" width="320" height="160" rx="16" fill="rgba(16, 185, 129, 0.08)" filter="url(#emeraldGlow)" />
+
+                    <!-- Main Container Card -->
+                    <rect x="40" y="30" width="320" height="160" rx="16" fill="url(#ashaBg)" stroke="url(#ashaBorder)" stroke-width="1.5" />
+
+                    <!-- Header Accent Strip -->
+                    <path d="M40 44 C40 36.268 46.268 30 54 30 H346 C353.732 30 360 36.268 360 44 V47 H40 V44 Z" fill="rgba(52, 211, 153, 0.2)" />
+                    
+                    <!-- Header Text Badges -->
+                    <rect x="60" y="36" width="90" height="5" rx="2.5" fill="#FFFFFF" opacity="0.9" />
+                    <rect x="158" y="36" width="50" height="5" rx="2.5" fill="rgba(52, 211, 153, 0.8)" />
+
+                    <!-- Status Pill (Active Health Sync) -->
+                    <rect x="272" y="34" width="74" height="14" rx="7" fill="rgba(16, 185, 129, 0.2)" stroke="rgba(52, 211, 153, 0.6)" stroke-width="1" />
+                    <circle cx="282" cy="41" r="3" fill="#34d399" filter="url(#emeraldGlow)" />
+                    <rect x="290" y="38" width="48" height="6" rx="3" fill="#34d399" opacity="0.9" />
+
+                    <!-- Health Register Data Fields (Left Side) -->
+                    <rect x="65" y="58" width="130" height="8" rx="4" fill="#38bdf8" opacity="0.9" />
+                    <rect x="65" y="72" width="190" height="5" rx="2.5" fill="rgba(255, 255, 255, 0.6)" />
+                    <rect x="65" y="83" width="150" height="5" rx="2.5" fill="rgba(255, 255, 255, 0.4)" />
+                    
+                    <!-- Record Progress Status Bar -->
+                    <rect x="65" y="96" width="170" height="7" rx="3.5" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(52, 211, 153, 0.4)" stroke-width="1" />
+                    <rect x="65" y="96" width="125" height="7" rx="3.5" fill="#34d399" opacity="0.9" filter="url(#emeraldGlow)" />
+
+                    <!-- Form Category Badges -->
+                    <rect x="65" y="110" width="52" height="14" rx="7" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1" />
+                    <rect x="73" y="114" width="36" height="6" rx="3" fill="#38bdf8" opacity="0.9" />
+                    
+                    <rect x="124" y="110" width="62" height="14" rx="7" fill="rgba(168, 85, 247, 0.15)" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1" />
+                    <rect x="132" y="114" width="46" height="6" rx="3" fill="#c084fc" opacity="0.9" />
+
+                    <!-- Medical Cross Shield Motif (Right Side) -->
+                    <circle cx="305" cy="88" r="30" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(244, 63, 94, 0.3)" stroke-width="1.5" />
+                    <circle cx="305" cy="88" r="24" stroke="#34d399" stroke-width="1" stroke-dasharray="3 3" fill="none" />
+                    <circle cx="305" cy="88" r="17" fill="url(#ashaCrossBg)" filter="url(#emeraldGlow)" />
+                    <path d="M305 78 V98 M295 88 H315" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" />
+
+                    <!-- Real-Time ECG Heartbeat Waveform (Bottom) -->
+                    <path d="M60 155 H135 L145 145 L155 168 L165 132 L175 160 L185 150 H340" stroke="rgba(255, 255, 255, 0.15)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M60 155 H135 L145 145 L155 168 L165 132 L175 160 L185 150 H340" stroke="url(#ecgGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#emeraldGlow)" />
+
+                    <!-- Animated Heartbeat Pulse Scanner Dot -->
+                    <circle cx="60" cy="155" r="3.5" fill="#00f2fe" filter="url(#emeraldGlow)">
+                      <animate 
+                        attributeName="cx" 
+                        values="60; 135; 145; 155; 165; 175; 185; 340; 60" 
+                        keyTimes="0; 0.3; 0.35; 0.45; 0.55; 0.65; 0.7; 0.95; 1"
+                        dur="3.2s" 
+                        repeatCount="indefinite" />
+                    </circle>
                   </svg>
                 </div>
               </div>
@@ -327,26 +394,109 @@
               aria-label="Open Gladiance Case Study">
               <div class="project-image-wrapper">
                 <div class="project-cover-vector">
-                  <!-- Abstract Connected IoT Devices Graph Vector Artwork -->
+                  <!-- Abstract Connected IoT Devices & Smart Home Network Artwork -->
                   <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="200" cy="110" r="35" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)"
-                      stroke-width="2" />
-                    <path d="M190 110A10 10 0 0 1 210 110" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
-                    <!-- Connected Nodes -->
-                    <line x1="200" y1="75" x2="200" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"
-                      stroke-dasharray="4 4" />
-                    <circle cx="200" cy="35" r="14" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" />
-                    <path d="M196 35H204M200 31V39" stroke="#FFFFFF" stroke-width="2" />
+                    <defs>
+                      <linearGradient id="gladianceBg" x1="40" y1="25" x2="360" y2="195" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#0b0f19" stop-opacity="0.9" />
+                        <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.9" />
+                      </linearGradient>
+                      <linearGradient id="gladianceBorder" x1="40" y1="25" x2="360" y2="195" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="rgba(99, 102, 241, 0.6)" />
+                        <stop offset="50%" stop-color="rgba(245, 158, 11, 0.4)" />
+                        <stop offset="100%" stop-color="rgba(0, 242, 254, 0.5)" />
+                      </linearGradient>
+                      <linearGradient id="hubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#8b5cf6" />
+                        <stop offset="100%" stop-color="#6366f1" />
+                      </linearGradient>
+                      <linearGradient id="lightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#fbbf24" />
+                        <stop offset="100%" stop-color="#f59e0b" />
+                      </linearGradient>
+                      <linearGradient id="tvGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00f2fe" />
+                        <stop offset="100%" stop-color="#06b6d4" />
+                      </linearGradient>
+                      <linearGradient id="gateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#34d399" />
+                        <stop offset="100%" stop-color="#10b981" />
+                      </linearGradient>
+                      <linearGradient id="fanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ec4899" />
+                        <stop offset="100%" stop-color="#d946ef" />
+                      </linearGradient>
+                      <filter id="iotGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="4" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                      </filter>
+                    </defs>
 
-                    <line x1="235" y1="110" x2="310" y2="110" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"
-                      stroke-dasharray="4 4" />
-                    <circle cx="320" cy="110" r="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" />
-                    <circle cx="320" cy="110" r="6" stroke="#FFFFFF" stroke-width="2" />
+                    <!-- Background Ambient Glow -->
+                    <rect x="40" y="25" width="320" height="170" rx="16" fill="rgba(99, 102, 241, 0.08)" filter="url(#iotGlow)" />
 
-                    <line x1="165" y1="110" x2="90" y2="110" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"
-                      stroke-dasharray="4 4" />
-                    <circle cx="80" cy="110" r="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" />
-                    <rect x="74" y="104" width="12" height="12" rx="2" stroke="#FFFFFF" stroke-width="2" />
+                    <!-- Outer Glass Container Card -->
+                    <rect x="40" y="25" width="320" height="170" rx="16" fill="url(#gladianceBg)" stroke="url(#gladianceBorder)" stroke-width="1.5" />
+
+                    <!-- CONNECTING NETWORK BEAMS -->
+                    <!-- Top Beam (Lighting) -->
+                    <line x1="200" y1="60" x2="200" y2="76" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.8" />
+                    
+                    <!-- Right Beam (TV/Media) -->
+                    <line x1="234" y1="110" x2="297" y2="110" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.8" />
+
+                    <!-- Left Beam (Security Lock) -->
+                    <line x1="103" y1="110" x2="166" y2="110" stroke="#34d399" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.8" />
+
+                    <!-- Bottom Beam (Climate/Fan) -->
+                    <line x1="200" y1="144" x2="200" y2="160" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.8" />
+
+                    <!-- CENTER SMART HUB NODE -->
+                    <!-- Outer Telemetry Halo -->
+                    <circle cx="200" cy="110" r="44" stroke="rgba(99, 102, 241, 0.3)" stroke-width="1" stroke-dasharray="4 4" fill="none" />
+                    <!-- Hub Container Base -->
+                    <circle cx="200" cy="110" r="32" fill="rgba(15, 23, 42, 0.9)" stroke="url(#gladianceBorder)" stroke-width="2" />
+                    <!-- Hub Center Core -->
+                    <circle cx="200" cy="110" r="22" fill="url(#hubGrad)" filter="url(#iotGlow)" />
+                    <!-- Wi-Fi / Signal Icon -->
+                    <path d="M192 105 A11 11 0 0 1 208 105 M195 109 A7 7 0 0 1 205 109 M198 113 A3 3 0 0 1 202 113" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none" />
+                    <circle cx="200" cy="117" r="1.8" fill="#38ef7d" />
+
+                    <!-- SATELLITE SMART DEVICE NODES -->
+                    <!-- Top Node - Smart Lighting (Amber) -->
+                    <circle cx="200" cy="42" r="16" fill="rgba(245, 158, 11, 0.15)" stroke="url(#lightGrad)" stroke-width="1.5" filter="url(#iotGlow)" />
+                    <path d="M195 42 H205 M200 37 V47" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" />
+
+                    <!-- Right Node - Smart TV (Cyan) -->
+                    <circle cx="315" cy="110" r="16" fill="rgba(0, 242, 254, 0.15)" stroke="url(#tvGrad)" stroke-width="1.5" filter="url(#iotGlow)" />
+                    <rect x="309" y="104" width="12" height="9" rx="1.5" stroke="#00f2fe" stroke-width="1.5" fill="none" />
+                    <path d="M312 115 H318" stroke="#00f2fe" stroke-width="1.5" />
+
+                    <!-- Left Node - Security Gate (Emerald) -->
+                    <circle cx="85" cy="110" r="16" fill="rgba(52, 211, 153, 0.15)" stroke="url(#gateGrad)" stroke-width="1.5" filter="url(#iotGlow)" />
+                    <rect x="80" y="106" width="10" height="8" rx="1.5" stroke="#34d399" stroke-width="1.5" fill="none" />
+                    <path d="M82 106 V103 A3 3 0 0 1 88 103 V106" stroke="#34d399" stroke-width="1.5" fill="none" />
+
+                    <!-- Bottom Node - Mood Fan Control (Magenta) -->
+                    <circle cx="200" cy="178" r="15" fill="rgba(236, 72, 153, 0.15)" stroke="url(#fanGrad)" stroke-width="1.5" filter="url(#iotGlow)" />
+                    <circle cx="200" cy="178" r="5" stroke="#ec4899" stroke-width="1.8" fill="none" />
+                    <path d="M196 178 H204 M200 174 V182" stroke="#ec4899" stroke-width="1.2" />
+
+                    <!-- ANIMATED LIVE TELEMETRY SIGNAL PULSES -->
+                    <!-- Top Pulse -->
+                    <circle cx="200" cy="76" r="3" fill="#fbbf24" filter="url(#iotGlow)">
+                      <animate attributeName="cy" values="76; 60; 76" dur="2.4s" repeatCount="indefinite" />
+                    </circle>
+
+                    <!-- Right Pulse -->
+                    <circle cx="234" cy="110" r="3" fill="#00f2fe" filter="url(#iotGlow)">
+                      <animate attributeName="cx" values="234; 297; 234" dur="2.8s" repeatCount="indefinite" />
+                    </circle>
+
+                    <!-- Left Pulse -->
+                    <circle cx="166" cy="110" r="3" fill="#34d399" filter="url(#iotGlow)">
+                      <animate attributeName="cx" values="166; 103; 166" dur="2.6s" repeatCount="indefinite" />
+                    </circle>
                   </svg>
                 </div>
               </div>
@@ -386,22 +536,99 @@
               aria-label="Open Workforce Attendance Case Study">
               <div class="project-image-wrapper">
                 <div class="project-cover-vector">
-                  <!-- Abstract QR Grid & Location Pin Vector Artwork -->
+                  <!-- Abstract QR Scanner & Geolocation GPS Vector Artwork -->
                   <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- QR Pattern Blocks -->
-                    <rect x="80" y="50" width="40" height="40" rx="6" fill="rgba(255,255,255,0.15)"
-                      stroke="rgba(255,255,255,0.3)" />
-                    <rect x="90" y="60" width="20" height="20" fill="#FFFFFF" />
-                    <rect x="140" y="50" width="20" height="20" rx="3" fill="rgba(255,255,255,0.1)" />
-                    <rect x="80" y="110" width="20" height="20" rx="3" fill="rgba(255,255,255,0.1)" />
-                    <!-- Location Pin Dissolve Motif -->
-                    <path
-                      d="M280 60C255 60 235 80 235 105C235 140 280 175 280 175C280 175 325 140 325 105C325 80 305 60 280 60Z"
-                      fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
-                    <circle cx="280" cy="100" r="12" fill="#FFFFFF" />
-                    <!-- Connecting Scan Line -->
-                    <path d="M130 90L235 105" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"
-                      stroke-dasharray="4 4" />
+                    <defs>
+                      <linearGradient id="attendBg" x1="40" y1="30" x2="360" y2="190" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9" />
+                        <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.9" />
+                      </linearGradient>
+                      <linearGradient id="attendBorder" x1="40" y1="30" x2="360" y2="190" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="rgba(0, 242, 254, 0.5)" />
+                        <stop offset="50%" stop-color="rgba(139, 92, 246, 0.4)" />
+                        <stop offset="100%" stop-color="rgba(56, 239, 125, 0.5)" />
+                      </linearGradient>
+                      <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f43f5e" />
+                        <stop offset="100%" stop-color="#e11d48" />
+                      </linearGradient>
+                      <linearGradient id="qrLaserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+                        <stop offset="50%" stop-color="#38ef7d" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+                      </linearGradient>
+                      <filter id="attGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="4" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                      </filter>
+                    </defs>
+
+                    <!-- Background Ambient Glow -->
+                    <rect x="40" y="30" width="320" height="160" rx="16" fill="rgba(0, 242, 254, 0.07)" filter="url(#attGlow)" />
+
+                    <!-- Outer Glass Container Card -->
+                    <rect x="40" y="30" width="320" height="160" rx="16" fill="url(#attendBg)" stroke="url(#attendBorder)" stroke-width="1.5" />
+
+                    <!-- Header Accent Strip -->
+                    <path d="M40 44 C40 36.268 46.268 30 54 30 H346 C353.732 30 360 36.268 360 44 V47 H40 V44 Z" fill="rgba(0, 242, 254, 0.15)" />
+
+                    <!-- Header Badges -->
+                    <rect x="60" y="36" width="80" height="5" rx="2.5" fill="#FFFFFF" opacity="0.9" />
+                    <rect x="148" y="36" width="45" height="5" rx="2.5" fill="rgba(0, 242, 254, 0.8)" />
+
+                    <!-- GPS Status Pill (Top Right) -->
+                    <rect x="270" y="33" width="76" height="14" rx="7" fill="rgba(56, 239, 125, 0.15)" stroke="rgba(56, 239, 125, 0.6)" stroke-width="1" />
+                    <circle cx="280" cy="40" r="3" fill="#38ef7d" filter="url(#attGlow)" />
+                    <rect x="288" y="37" width="50" height="6" rx="3" fill="#38ef7d" opacity="0.9" />
+
+                    <!-- QR SCANNER MODULE (Left Side) -->
+                    <!-- Reticle HUD Corner Brackets -->
+                    <path d="M62 66 V60 A 3 3 0 0 1 65 57 H71" stroke="#38ef7d" stroke-width="2" stroke-linecap="round" fill="none" />
+                    <path d="M141 57 H147 A 3 3 0 0 1 150 60 V66" stroke="#38ef7d" stroke-width="2" stroke-linecap="round" fill="none" />
+                    <path d="M62 126 V132 A 3 3 0 0 0 65 135 H71" stroke="#38ef7d" stroke-width="2" stroke-linecap="round" fill="none" />
+                    <path d="M141 135 H147 A 3 3 0 0 0 150 132 V126" stroke="#38ef7d" stroke-width="2" stroke-linecap="round" fill="none" />
+
+                    <!-- QR Code Base Container -->
+                    <rect x="68" y="63" width="76" height="66" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1" />
+
+                    <!-- QR Finder Pattern Top-Left -->
+                    <rect x="76" y="70" width="22" height="22" rx="4" fill="rgba(0, 242, 254, 0.2)" stroke="#00f2fe" stroke-width="1.5" />
+                    <rect x="82" y="76" width="10" height="10" rx="2" fill="#FFFFFF" />
+
+                    <!-- QR Finder Pattern Top-Right -->
+                    <rect x="114" y="70" width="22" height="22" rx="4" fill="rgba(0, 242, 254, 0.2)" stroke="#00f2fe" stroke-width="1.5" />
+                    <rect x="120" y="76" width="10" height="10" rx="2" fill="#FFFFFF" />
+
+                    <!-- QR Finder Pattern Bottom-Left -->
+                    <rect x="76" y="98" width="18" height="18" rx="3" fill="rgba(56, 239, 125, 0.2)" stroke="#38ef7d" stroke-width="1.5" />
+                    <rect x="81" y="103" width="8" height="8" rx="1.5" fill="#38ef7d" />
+
+                    <!-- QR Data Elements (Bottom Right) -->
+                    <rect x="104" y="98" width="10" height="10" rx="2" fill="#8b5cf6" />
+                    <rect x="118" y="98" width="14" height="6" rx="1.5" fill="#00f2fe" />
+                    <rect x="104" y="111" width="28" height="5" rx="1.5" fill="#38ef7d" opacity="0.9" />
+
+                    <!-- GPS GEOLOCATION PIN MODULE (Right Side) -->
+                    <!-- Geofence Radar Ripple Rings -->
+                    <circle cx="280" cy="104" r="42" stroke="rgba(0, 242, 254, 0.2)" stroke-width="1" stroke-dasharray="4 4" fill="none" />
+                    <circle cx="280" cy="104" r="26" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1" stroke-dasharray="2 2" fill="none" />
+
+                    <!-- Pin Drop Shadow -->
+                    <ellipse cx="280" cy="144" rx="20" ry="5" fill="rgba(0, 242, 254, 0.25)" filter="url(#attGlow)" />
+
+                    <!-- 3D Location Pin -->
+                    <path d="M280 62 C260 62 245 78 245 98 C245 125 280 150 280 150 C280 150 315 125 315 98 C315 78 300 62 280 62 Z" fill="url(#pinGrad)" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.5" filter="url(#attGlow)" />
+                    <!-- Pin Center Target -->
+                    <circle cx="280" cy="94" r="10" fill="#FFFFFF" />
+                    <circle cx="280" cy="94" r="4.5" fill="#38ef7d" />
+
+                    <!-- CONNECTING SCAN & GEOLOCATION RAY -->
+                    <path d="M152 96 L245 96" stroke="rgba(0, 242, 254, 0.6)" stroke-width="2" stroke-dasharray="4 4" />
+                    
+                    <!-- Animated Ray Pulse Dot -->
+                    <circle cx="152" cy="96" r="3.5" fill="#38ef7d" filter="url(#attGlow)">
+                      <animate attributeName="cx" values="152; 245; 152" dur="2.8s" repeatCount="indefinite" />
+                    </circle>
                   </svg>
                 </div>
               </div>
