@@ -152,49 +152,14 @@
 }
 
 /* --------------------------------------------------------------------------
-   INTERACTIVE HORIZONTAL SCROLLABLE SKILLS CONTAINER
+   SKILLS & TECH STACK GRID CONTAINER
    -------------------------------------------------------------------------- */
-.skills-scroll-wrapper {
-  width: 100%;
-  position: relative;
-  margin-top: var(--space-lg);
-}
-
-.skills-scroll-track {
+.skills-grid-wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-sm);
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 12px 4px 20px 4px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  cursor: grab;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.05);
-}
-
-.skills-scroll-track:active {
-  cursor: grabbing;
-}
-
-.skills-scroll-track::-webkit-scrollbar {
-  height: 6px;
-}
-
-.skills-scroll-track::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 4px;
-}
-
-.skills-scroll-track::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.skills-scroll-track::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.45);
+  gap: 12px;
+  margin-top: var(--space-lg);
 }
 
 .skill-pill-item {
@@ -209,7 +174,6 @@
   border-radius: var(--radius-pill);
   transition: transform 0.3s var(--ease-out-smooth), border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   white-space: nowrap;
-  flex-shrink: 0;
 }
 
 .skill-pill-item:hover {
@@ -232,14 +196,6 @@
   font-size: var(--font-size-sm);
   font-weight: 600;
   color: var(--text-primary);
-}
-
-/* Skills Grid Layout for Multi-Row Display */
-.skills-grid-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: var(--space-md);
 }
 
 /* --------------------------------------------------------------------------
